@@ -108,7 +108,7 @@ def calculate_bonus_for_each_employee():
     results = execute_query(query)
     print("Розмір премії для кожного співробітника:")
     for row in results:
-        print(f"{row[0]} {row[1]}, {row[2]:.2f} грн, {row[3]:.2f} грн")  # Форматування
+        print(f"{row[0]} {row[1]}, {row[2]:.2f} грн, {row[3]:.2f} грн") 
 
 
 # Функція для підрахунку рівнів освіти у кожному відділі

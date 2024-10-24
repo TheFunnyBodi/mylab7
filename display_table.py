@@ -1,7 +1,7 @@
 import psycopg2
 from tabulate import tabulate
 
-# Функція для підключення до бази даних
+# Підключення до бази даних
 def connect_db():
     connection = psycopg2.connect(
         host="localhost",
@@ -27,7 +27,6 @@ def display_table(table_name, column_names, records):
     print(f"Таблиця: {table_name}")
     print(tabulate(records, headers=column_names, tablefmt='psql'))
 
-# Основна частина програми
 if __name__ == "__main__":
     print("Відділ кадрів\n") 
     tables = {
